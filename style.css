@@ -1,0 +1,98 @@
+body {
+    /* background-color: bisque; */
+    background-image: url('back.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex; 
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.item1 {
+    background-color: transparent; 
+    width: 450px;
+    height: 500px;
+    border-radius: 15px;
+    box-shadow: 3px 6px 15px rgb(49, 49, 49);
+    border: 5px solid black;
+    animation: anima 4s ease-in-out infinite ;
+}
+
+.sec1, .sec2, .sec3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 13px;
+    font-family: sans-serif;
+    column-gap: 10px;
+}
+
+#result {
+    margin: 10px 50px;
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 170px;
+    height: 30px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+h1 {
+    font-family: 'Monotype Corsiva', cursive;
+    text-align: center;
+    font-size: 33px;
+    text-transform: capitalize;
+}
+
+.self {
+    margin-left: 50px;
+    background-color: black;
+    color: darkcyan;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    font-family: 'Monotype Corsiva', cursive;
+    font-weight: 700;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.self:hover {
+    color: whitesmoke;
+    background-color: darkslategray;
+    box-shadow: 5px 10px 10px black;
+}
+
+@keyframes anima {
+    0% {
+        border: 5px solid black;
+        border-radius: 15px;
+    }
+    25% {
+        border: 5px solid rgb(54, 54, 54);
+        border-radius: 15%;
+    }
+    50% {
+        border: 5px solid rgb(88, 88, 88);
+        border-radius: 20%;
+
+    }
+    75% {
+        border-radius: 20%;
+        border: 5px solid rgb(156, 156, 156);
+
+    }
+    100% {
+        border: 5px solid rgb(51, 51, 51);
+        border-radius: 20px;
+    }
+}
